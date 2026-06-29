@@ -1,0 +1,11 @@
+pytest>=7.0.0
+pytest-cov>=4.0.0
+
+faker>=20.0.0
+
+mkdocs
+mkdocs-material
+mkdocs-glightbox
+
+ruff
+flake8
