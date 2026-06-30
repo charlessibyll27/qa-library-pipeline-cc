@@ -7,7 +7,7 @@ Data validation functions.
 def validate_isbn(isbn):
     """Validate ISBN-13 format."""
 
-    isbn = str(isbn).replace("-", "") #Removing hyphens
+    isbn = str(isbn).replace("-", "")  # Removing hyphens
 
     # ISBN must be 13 digits
     if len(isbn) != 13:
@@ -24,7 +24,7 @@ def validate_isbn(isbn):
             total += int(digit)
         else:
             total += int(digit) * 3
-    
+
     check_digit = (10 - (total % 10)) % 10
 
     return check_digit == int(isbn[12])

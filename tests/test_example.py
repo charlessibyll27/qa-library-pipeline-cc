@@ -16,8 +16,8 @@ def sample_df():
     })
 
 
-def test_example(sample_df):
-    """Example test - shows pytest working."""
+def test_example_length(sample_df):
+    """Example test - shows correct length."""
     assert len(sample_df) == 3
     assert 'id' in sample_df.columns
     assert sample_df['id'].is_unique
