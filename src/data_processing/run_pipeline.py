@@ -111,7 +111,7 @@ def process_circulation_data():
     # Step 4: Save cleaned data
     print("\n[4/4] Saving cleaned data...")
     filepath = save_to_silver(df_clean, 'circulation_clean.csv')
-    print(f"  ✓ Saved to: {filepath}")
+    print(f"  Saved to: {filepath}")
     print_dataframe_info(df_clean, "Cleaned data")
 
     return df_clean
@@ -141,7 +141,7 @@ def process_events_data():
     # Step 3: Save cleaned data
     print("\n[3/3] Saving cleaned data...")
     filepath = save_to_silver(df_clean, 'events_clean.csv')
-    print(f"  ✓ Saved to: {filepath}")
+    print(f"  Saved to: {filepath}")
 
     print_dataframe_info(df_clean, "Cleaned data")
 
@@ -182,7 +182,7 @@ def process_catalogue_data():
     # Step 4: Save cleaned data
     print("\n[4/4] Saving cleaned data...")
     filepath = save_to_silver(df_clean, 'catalogue_clean.csv')
-    print(f"  ✓ Saved to: {filepath}")
+    print(f"  Saved to: {filepath}")
 
     print_dataframe_info(df_clean, "Cleaned data")
 
@@ -214,7 +214,7 @@ def process_feedback_data():
     print(f"  - Found {feedback_count} feedback entries")
 
     # Capture both branch name and rating number
-    pattern = r"- ([A-Za-z\s]+ Branch) ~ (\d)⭐"
+    pattern = r"- ([A-Za-z\s]+ Branch) ~ (\d)"
     matches = re.findall(pattern, content)
 
     # Convert to DataFrame
@@ -229,7 +229,7 @@ def process_feedback_data():
     # Step 2: Save
     print("\n[2/2] Saving processed feedback...")
     filepath = save_to_silver(df_summary, "feedback_summary.csv")
-    print(f"  ✓ Saved to: {filepath}")
+    print(f"  Saved to: {filepath}")
 
     print(f"  - Processed {feedback_count} feedback entries")
 
@@ -270,7 +270,7 @@ def run_pipeline():
 
         # Print final summary
         print_section_header("PIPELINE SUMMARY")
-        print("\n✓ Pipeline completed successfully!")
+        print("\n Pipeline completed successfully!")
         print(f"  - Duration: {duration:.2f} seconds")
         print(f"  - Files processed: {len(results)}")
         print(f"  - Output directory: {SILVER_DIR}")
@@ -289,7 +289,7 @@ def run_pipeline():
         return results
 
     except Exception as e:
-        print(f"\n❌ Pipeline failed with error: {str(e)}")
+        print(f"\n Pipeline failed with error: {str(e)}")
         print("  - Check your data files exist")
         print("  - Check your functions are working")
         raise
