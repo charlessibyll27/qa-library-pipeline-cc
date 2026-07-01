@@ -6,9 +6,9 @@
 ![Open Issues](https://img.shields.io/github/issues/YOUR_USERNAME/YOUR_REPO)
 ![Open PRs](https://img.shields.io/github/issues-pr/YOUR_USERNAME/YOUR_REPO)
 ![Last Commit](https://img.shields.io/github/last-commit/YOUR_USERNAME/YOUR_REPO)
-![CI Pipeline Badge](https://github.com/YOUR_USERNAME/YOUR_REPO/actions/workflows/ci.yml/badge.svg)
+![CI Pipeline Badge](https://github.com/charlessibyll27/qa-library-pipeline-cc/actions/workflows/ci.yml/badge.svg)
 
-<mark>*Replace `YOUR_USERNAME/YOUR_REPO` with your details*</mark>
+<mark>*Updated the README locally with new username and repo text*</mark>
 
 ## Project Overview
 [TODO: Describe the library's data quality problem]
@@ -32,8 +32,8 @@ git config --global user.name "Your Name"
 ### Local Development
 ```bash
 # Clone this repository
-git clone https://github.com/YOUR_USERNAME/YOUR_REPO.git
-cd YOUR_REPO
+git clone https://github.com/charlessibyll27/qa-library-pipeline-cc.git
+cd qa-library-pipeline-cc
 
 # Create virtual environment
 python -m venv venv
