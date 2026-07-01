@@ -12,7 +12,7 @@ from faker import Faker
 import pandas as pd
 import json
 import random
-from datetime import date, datetime, timedelta
+from datetime import date, timedelta
 import numpy as np
 
 
