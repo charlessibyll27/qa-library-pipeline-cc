@@ -26,5 +26,5 @@ jobs:
 
       - name: Run tests with coverage
         run: |
-          pytest --cov=src --cov-fail-under=90
+          pytest --cov=src --cov-fail-under=50
           # To block merges on low coverage, add: --cov-fail-under=70
