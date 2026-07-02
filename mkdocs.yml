@@ -7,6 +7,7 @@ nav:
   - Architecture:
     - Pipeline Design: architecture/design-pipeline.md
     - ADR: architecture/adr.md
+  - Project Tasks: PROJECT_TASKS.md
 
 # Theme
 theme:
@@ -51,8 +52,13 @@ markdown_extensions:
   - pymdownx.smartsymbols
   - pymdownx.snippets:
       check_paths: true
-  - pymdownx.superfences
-  - pymdownx.tabbed
+  - pymdownx.superfences:
+      custom_fences:
+        - name: mermaid
+          class: mermaid
+          format: !!python/name:pymdownx.superfences.fence_code_format
+  - pymdownx.tabbed:
+      alternate_style: true
   - pymdownx.tasklist:
       custom_checkbox: true
       clickable_checkbox: false
@@ -61,3 +67,5 @@ markdown_extensions:
 plugins:
   - search
 
+extra_javascript:
+  - https://unpkg.com/mermaid/dist/mermaid.min.js
